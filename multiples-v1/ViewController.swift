@@ -10,16 +10,35 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    var trail = 0;
+    
+    @IBOutlet weak var imgTitle: UIImageView!
+    @IBOutlet weak var txtInputField: UITextField!
+    @IBOutlet weak var lblEquation: UILabel!
+
+    @IBOutlet weak var btnPlayOut: UIButton!
+    @IBOutlet weak var btnAdd: UIButton!
+    
+    
+   
+    
+    @IBAction func btnPlay(sender: AnyObject) {
+        if txtInputField.text != nil && txtInputField.text != "" {
+            btnAdd.hidden = false;
+            imgTitle.hidden = true;
+            txtInputField.hidden = true;
+            btnPlayOut.hidden = true;
+            lblEquation.hidden = false;
+            
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func btnAdd(sender: AnyObject) {
+        let constante = Int(txtInputField.text!)!;
+        let total = constante + trail;
+        
+        lblEquation.text = " \(trail) + \(constante) = \(total) ";
+        
+        trail += constante
     }
-
-
 }
 

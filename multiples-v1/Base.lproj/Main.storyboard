@@ -24,15 +24,72 @@
                                     <constraint firstAttribute="width" secondItem="NAW-eU-Vlr" secondAttribute="height" multiplier="1:1" id="xcO-ZA-OiB"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MULTIPLES" translatesAutoresizingMaskIntoConstraints="NO" id="AqB-Ah-sEg">
+                                <rect key="frame" x="150" y="20" width="300" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="fdv-gS-m2P"/>
+                                    <constraint firstAttribute="width" constant="300" id="jDr-lq-CpA"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input a number..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sF8-mr-W8S">
+                                <rect key="frame" x="148" y="326" width="305" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="305" id="VNc-kv-SVe"/>
+                                    <constraint firstAttribute="height" constant="60" id="wmJ-c9-fyh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2SU-O6-PRt">
+                                <rect key="frame" x="213" y="424" width="175" height="168"/>
+                                <state key="normal" image="play"/>
+                                <connections>
+                                    <action selector="btnPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uuk-j6-x3z"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STt-G6-Unb">
+                                <rect key="frame" x="195" y="445" width="211" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="BgI-R5-RO4"/>
+                                    <constraint firstAttribute="width" constant="211" id="Kac-Qa-LjO"/>
+                                </constraints>
+                                <state key="normal" image="add"/>
+                                <connections>
+                                    <action selector="btnAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7bz-qM-5hA"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="PRESS ADD TO ADD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hW-T7-UHW">
+                                <rect key="frame" x="62" y="192" width="476" height="59"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="sF8-mr-W8S" firstAttribute="leading" secondItem="AqB-Ah-sEg" secondAttribute="leading" id="2SP-f4-dPH"/>
+                            <constraint firstItem="7hW-T7-UHW" firstAttribute="top" secondItem="AqB-Ah-sEg" secondAttribute="bottom" constant="57" id="6wM-cb-78E"/>
+                            <constraint firstItem="AqB-Ah-sEg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="8JN-2H-5Vl"/>
+                            <constraint firstItem="STt-G6-Unb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BQY-qA-GPz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="STt-G6-Unb" secondAttribute="bottom" constant="54" id="BRD-uo-6Va"/>
                             <constraint firstAttribute="trailing" secondItem="NAW-eU-Vlr" secondAttribute="trailing" id="Dik-xT-K9G"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NAW-eU-Vlr" secondAttribute="bottom" id="Hec-dN-Ied"/>
                             <constraint firstItem="NAW-eU-Vlr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KgF-BA-arW"/>
+                            <constraint firstItem="AqB-Ah-sEg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NNo-bc-bLZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2SU-O6-PRt" secondAttribute="bottom" id="QHV-HZ-Wf3"/>
                             <constraint firstItem="NAW-eU-Vlr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ViA-Hw-xPg"/>
+                            <constraint firstItem="7hW-T7-UHW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="isb-vZ-kJR"/>
+                            <constraint firstItem="2SU-O6-PRt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vOh-3l-eaN"/>
+                            <constraint firstItem="2SU-O6-PRt" firstAttribute="top" secondItem="sF8-mr-W8S" secondAttribute="bottom" constant="38" id="wdr-xw-6Xh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnAdd" destination="STt-G6-Unb" id="USD-Hl-95e"/>
+                        <outlet property="btnPlayOut" destination="2SU-O6-PRt" id="zWL-BW-1OC"/>
+                        <outlet property="imgTitle" destination="AqB-Ah-sEg" id="G1m-GX-k1z"/>
+                        <outlet property="lblEquation" destination="7hW-T7-UHW" id="h5O-rR-3Z5"/>
+                        <outlet property="txtInputField" destination="sF8-mr-W8S" id="B0M-qc-p67"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -40,6 +97,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="MULTIPLES" width="533" height="124"/>
+        <image name="add" width="211" height="101"/>
         <image name="chalkboard" width="801" height="750"/>
+        <image name="play" width="272" height="268"/>
     </resources>
 </document>
